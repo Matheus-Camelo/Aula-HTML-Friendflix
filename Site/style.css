@@ -1,0 +1,157 @@
+body{
+  margin: 0;
+}
+
+header{
+  background: #831619;
+  padding: 20px 0;
+}
+
+h1{
+  font-family:'Bebas Neue';
+  font-style: bold;
+  font-size: 70px;
+  color: #DFBE24;
+  line-height: 81px;
+  line-height: 100%;
+  display: flex;
+  justify-content:center;
+}
+
+h2{
+  font-family: 'Noto Serif';
+  font-style: none;
+  font-size: 32px;
+  line-height:32px;
+  line-height: 100%;
+  display: flex;
+  justify-content:center;
+  fill:solid;
+}
+
+nav{
+  position: absolute;
+  top: 40px;
+  right: 0;
+}
+
+nav li{
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
+nav a{
+  font-family: 'Noto Serif';
+  text-transform: uppercase;
+  color: #000;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+
+}
+
+nav a:hover{
+  color:#DFBE24;
+  text-decoration: underline;
+
+}
+
+main{
+  background: #181818;
+}
+
+img{
+  border-radius: 10px;
+}
+
+footer{
+  background-color: #831619;
+  text-align: center;
+  padding: 80px 0;
+
+}
+
+p a{
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 81px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+}
+
+p a:hover{
+  color:#DEBF24;
+  text-decoration: underline;
+}
+
+.container{
+  position: relative;
+  width:940px;
+  margin: 0 auto;
+}
+
+.divHome{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.first{
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.first h3{
+  font-family: 'Noto Serif';
+  font-style: Regular;
+  font-size: 43px;
+  line-height:32px;
+  line-height: 100%;
+  align:left;
+  vertical-align: top;
+  margin:30px;
+}
+
+.description1{
+  color: gold;
+  word-break: normal;
+  max-width: 60vw;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  font-weight: 400;
+  margin: 10px 0 0;
+  margin-top: 10px;
+  padding-right: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.description2{
+  color: gold;
+  word-break: normal;
+  max-width: 60vw;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  font-weight: 400;
+  margin: 10px 0 0;
+  margin-top: 10px;
+  padding-left: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer{
+  font-family: 'Noto Serif';
+}
+
+.badge1{
+  max-width: 10vw;
+}
+.badge2{
+  max-width: 11.7vw;
+}

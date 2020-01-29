@@ -3,13 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 use App\User;
+use App\Http\Requests\UserRequest;
+use Illuminate\Http\Exceptions\HttpResponseException;
+
 
 class UserController extends Controller
 {
 
-public function createUser(Request $request){
-
+public function createUser(UserRequest $request){
   $user = new User;
 
   $user->name = $request->name;

@@ -21,9 +21,9 @@ class CreateUsersTable extends Migration
             $table->integer('age');
             $table->string('gender');
             $table->integer('phone');
+            $table->integer('cpf');
             // $table->unsignedBigInteger('serie_id')->nullable();
             $table->timestamp('email_verified_at')->nullable();
-            // $table->string('password');
             $table->rememberToken();
             $table->timestamps();
         });

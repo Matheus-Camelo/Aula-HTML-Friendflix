@@ -174,7 +174,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        LaravelLegends\PtBrValidator\ValidatorProvider::class
+        LaravelLegends\PtBrValidator\ValidatorProvider::class //so apagra isos aqui dps so to fazenod pra oclocar no git
 
     ],
 

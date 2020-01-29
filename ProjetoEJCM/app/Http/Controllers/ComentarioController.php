@@ -56,6 +56,4 @@ class ComentarioController extends Controller
   }
 
 
-  }
-
 }

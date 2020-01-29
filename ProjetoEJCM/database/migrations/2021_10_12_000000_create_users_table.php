@@ -22,16 +22,16 @@ class CreateUsersTable extends Migration
             $table->string('gender');
             $table->integer('phone');
             $table->integer('cpf');
-            // $table->unsignedBigInteger('serie_id')->nullable();
             $table->timestamp('email_verified_at')->nullable();
+            $table->unsignedBigInteger('comment_id')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
 
         // //Adicionando Foreign Key
-        // Schema::table('users', function (Blueprint $table){
-        //   $table->foreign('serie_id')->references('id')->on('series')->onDelete('set null');
-        // });
+         Schema::table('users', function (Blueprint $table){
+           $table->foreign('comment_id')->references('id')->on('comentarios')->onDelete('cascade');
+         });
 
 
 

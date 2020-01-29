@@ -161,7 +161,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-
+        //LaravelLegends\PtBrValidator\ValidatorProvider::class //so apagra isos aqui dps so to fazenod pra oclocar no git // composer require laravellegends/pt-br-validator:6.*
         /*
          * Package Service Providers...
          */
@@ -174,7 +174,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        LaravelLegends\PtBrValidator\ValidatorProvider::class //so apagra isos aqui dps so to fazenod pra oclocar no git
+
 
     ],
 

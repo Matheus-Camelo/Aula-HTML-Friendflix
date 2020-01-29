@@ -21,14 +21,14 @@ class CreateSeriesTable extends Migration
             $table->string('genre');
             $table->integer('ranking');
             $table->integer('rating');
-            // $table->unsignedBigInteger('user_id')->nullable();
+            $table->unsignedBigInteger('comment_id')->nullable();
             $table->timestamps();
         });
 
         //Adicionando Foreign Key
-        // Schema::table('series', function (Blueprint $table){
-        //   $table->foreign('user_id')->references('id')->on('users')->onDelete('set null');
-        // });
+        Schema::table('series', function (Blueprint $table){
+            $table->foreign('comment_id')->references('id')->on('comentarios')->onDelete('set null');
+          });
       }
 
     /**

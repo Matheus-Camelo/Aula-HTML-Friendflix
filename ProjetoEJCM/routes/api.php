@@ -30,3 +30,12 @@ Route::get('mostraSerie/{id}', 'SerieController@showSerie');//rota para mostrar 
 Route::post('criaSerie', 'SerieController@createSerie');//rota para criar uma serie
 Route::put('atualizaSerie/{id}', 'SerieController@updateSerie');//rota para atualizar uma serie específica
 Route::delete('deletaSerie/{id}', 'SerieController@deleteSerie');//rota para deletar uma serie específica
+
+//ROTAS PARA REGISTRO
+Route::post('register', 'API\PassportController@register');
+Route::post('login', 'API\PassportController@login');
+
+Route::group(['middleware' => 'auth:api'], function(){
+    Route::post('logout', 'API\PassportController@logout');
+    Route::get('getDetails', 'API\PassportController@getDetails');
+});

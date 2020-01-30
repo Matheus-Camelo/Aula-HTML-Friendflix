@@ -4,6 +4,9 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
+use Laravel\Passport\Passport;
+use Faker\Generator as FakeGenerator;
+use Faker\Factory as FakerFactory;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -14,7 +17,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->singleton(\Faker\Generator::class, function(){
+            return \Faker\Factory::create('pt_BR');
+        });
     }
 
     /**
@@ -26,6 +31,7 @@ class AppServiceProvider extends ServiceProvider
     {
         //
         Schema::defaultStringLength(191);
+        Passport::routes();
 
     }
 }

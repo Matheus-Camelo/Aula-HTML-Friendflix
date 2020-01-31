@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Posts</ion-title>
+  </ion-toolbar>
+</ion-header>
+  <ion-content>
+  <ion-card class="welcome-card">
+    <img src='https://im0-tub-com.yandex.net/i?id=cf79ee5f8a5f9f31e9e115b03812c429&n=13&exp=1' alt="Pessoas de capuz"/>
+  </ion-card>
+  <div class = "firstDiv">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus volutpat ornare metus non convallis. Phasellus ex tellus, blandit quis auctor a, blandit vitae lectus. Pellentesque feugiat nulla eget arcu molestie, ac dignissim mi consequat. Praesent vulputate in purus non commodo. Maecenas pretium et massa vitae mollis.</p>
+  </div>
+  <ion-card-header>
+    <ion-card-subtitle>{{likeHere}}</ion-card-subtitle>
+  </ion-card-header> 
+  <ion-card-content>
+    <div>
+      <p>{{numberOfLikes}}</p>
+      <button>Likes</button>
+      <button>Dislike</button>
+    </div>
+    <ion-icon (click)="likeButtonClick()" size="large" name="thumbs-up" (click)="like($event)"color="{{numberOfLikes.is_liked ? 'primary' : 'grey'}}" ></ion-icon>
+    <ion-icon (click)="dislikeButtonClick()" size="large" name="thumbs-down" (click)="like($event)"color="{{numberOfLikes.is_liked ? 'blue' : 'grey'}}" ></ion-icon>
+  </ion-card-content>
+</ion-content>
